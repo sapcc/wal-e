@@ -63,7 +63,6 @@ def _is_mostly_subdomain_compatible(bucket_name):
     return (bucket_name.lower() == bucket_name and
             len(bucket_name) >= 3 and
             len(bucket_name) <= 63 and
-            '_' not in bucket_name and
             '..' not in bucket_name and
             '-.' not in bucket_name and
             '.-' not in bucket_name and
